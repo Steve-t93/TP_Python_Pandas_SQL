@@ -22,7 +22,7 @@ def tri_a_bulles(t):
         for j in range(n - 1 - i):
             if t[j] > t[j + 1]:
                 t[j], t[j + 1] = t[j + 1], t[j]
-
+    return t
 '''
 t = [random.randint(0,15) for x in range(15)]
 indice_min = index_minimum(t, 3, 5)
@@ -81,7 +81,7 @@ def recherche_dichotomique(t, element):
 
 # 3. Proposer une procédure insertion(e,t,n) qui ajoute un élément e à sa place dans un
 # tableau t de taille n.
-def insertion(e,t,n):
+def insertion(e, t, n):
     i = n - 1
 
     while i >= 0 and t[i] > e:
@@ -89,6 +89,7 @@ def insertion(e,t,n):
         i -= 1
 
         t[i + 1] = e
+    return t
 '''
 t = [1,3,5,8,11,14]
 n = 6
@@ -106,6 +107,7 @@ def tri_extraction(t):
     for i in range(n):
         indice_min = index_minimum(t, i, n - 1)
         t[i], t[indice_min] = t[indice_min], t[i]
+    return t
 
 # 2. tri_insertion utilisant insertion(e,t,n) : prendre le i ème élément et le mettre à sa
 # place dans les i-1 premières cases déjà triées.
@@ -115,3 +117,5 @@ def tri_insertion(t):
     for i in range(1, n):
         element_courant = t[i]
         insertion(element_courant, t, i)
+
+    return t

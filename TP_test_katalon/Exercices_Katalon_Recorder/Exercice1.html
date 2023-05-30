@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>Exercice1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Login</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login<datalist><option>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>name=username<datalist><option>name=username</option><option>xpath=//input[@name='username']</option><option>xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input</option><option>xpath=//div[2]/input</option><option>css=input[name="username"]</option></datalist></td><td>Admin</td></tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>xpath=//input[@name='password']</option><option>xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input</option><option>xpath=//div[2]/div/div[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>admin123</td></tr>
+<tr><td>click</td><td>xpath=//button[@type='submit']<datalist><option>xpath=//button[@type='submit']</option><option>xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[3]/button</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Username'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='OrangeHRM, Inc'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Katalon Recorder is recording ...'])[1]/preceding::button[1]</option><option>xpath=//button</option><option>css=button.oxd-button.oxd-button--medium.oxd-button--main.orangehrm-login-button</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">logout</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>xpath=//div[@id='app']/div/div/header/div/div[2]/ul/li/span/i<datalist><option>xpath=//div[@id='app']/div/div/header/div/div[2]/ul/li/span/i</option><option>xpath=//span/i</option><option>css=i.oxd-icon.bi-caret-down-fill.oxd-userdropdown-icon</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>xpath=//a[contains(text(),'Logout')]</option><option>xpath=//div[@id='app']/div/div/header/div/div[2]/ul/li/ul/li[4]/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Change Password'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Support'])[1]/following::a[2]</option><option>xpath=//*/text()[normalize-space(.)='Logout']/parent::*</option><option>xpath=//a[contains(@href, '/web/index.php/auth/logout')]</option><option>xpath=//li/ul/li[4]/a</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">LoginKO</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login<datalist><option>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>name=username<datalist><option>name=username</option><option>xpath=//input[@name='username']</option><option>xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input</option><option>xpath=//div[2]/input</option><option>css=input[name="username"]</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>name=username<datalist><option>name=username</option><option>xpath=//input[@name='username']</option><option>xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input</option><option>xpath=//div[2]/input</option><option>css=input[name="username"]</option></datalist></td><td>Steve</td></tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>xpath=//input[@name='password']</option><option>xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input</option><option>xpath=//div[2]/div/div[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>xpath=//input[@name='password']</option><option>xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input</option><option>xpath=//div[2]/div/div[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>1234</td></tr>
+<tr><td>click</td><td>xpath=//button[@type='submit']<datalist><option>xpath=//button[@type='submit']</option><option>xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[3]/button</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Username'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='OrangeHRM, Inc'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Katalon Recorder is recording ...'])[1]/preceding::button[1]</option><option>xpath=//button</option><option>css=button.oxd-button.oxd-button--medium.oxd-button--main.orangehrm-login-button</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Deconnexion</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>xpath=//div[@id='app']/div/div/header/div/div[2]/ul/li/span/i<datalist><option>xpath=//div[@id='app']/div/div/header/div/div[2]/ul/li/span/i</option><option>xpath=//span/i</option><option>css=i.oxd-icon.bi-caret-down-fill.oxd-userdropdown-icon</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>xpath=//a[contains(text(),'Logout')]</option><option>xpath=//div[@id='app']/div/div/header/div/div[2]/ul/li/ul/li[4]/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Change Password'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Support'])[1]/following::a[2]</option><option>xpath=//*/text()[normalize-space(.)='Logout']/parent::*</option><option>xpath=//a[contains(@href, '/web/index.php/auth/logout')]</option><option>xpath=//li/ul/li[4]/a</option></datalist></td><td></td></tr>
+</tbody></table>
+</body>
+</html>
